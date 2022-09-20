@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title routerLink="../auth"><ion-icon name="arrow-back-outline"></ion-icon></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="wrapper">
+    <h1>Login</h1>
+    <input type="text" placeholder="Email" [(ngModel)]="userData.email">
+    <input type="password" placeholder="Password" [(ngModel)]="userData.password">
+    <button (click)="login()">Login</button>
+  </div>
+</ion-content>

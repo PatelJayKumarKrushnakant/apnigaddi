@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title routerLink="../auth"><ion-icon name="arrow-back-outline"></ion-icon></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="wrapper">
+    <h1>Register</h1>
+    <input type="text" placeholder="User Name" [(ngModel)]="userdata.userName">
+    <input type="text" placeholder="Email" [(ngModel)]="userdata.email">
+    <input type="password" placeholder="Password" [(ngModel)]="userdata.password">
+    <button (click)="register()">Register</button>
+  </div>
+</ion-content>
