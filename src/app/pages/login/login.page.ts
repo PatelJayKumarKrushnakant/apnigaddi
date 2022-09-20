@@ -24,9 +24,11 @@ export class LoginPage implements OnInit {
       alert("Email not registered!");
     }
     user = JSON.parse(user);
-    if(user.email === this.userData.email || user.password === this.userData.password){
+    if(user.email === this.userData.email && user.password === this.userData.password){
       localStorage.setItem("userLoggedIn", "TRUE");
       this.router.navigateByUrl("/tabs");
+    } else{
+      alert("Invalid Credencials!");
     }
   }
 
